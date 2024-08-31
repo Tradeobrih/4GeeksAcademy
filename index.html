@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador en javaScript</title>
+<style>
+    body{
+        background-color: rgb(248, 245, 242);
+        margin-top: 10%;
+        font-size: xx-large;
+        text-align: center;
+        }
+    p{
+        display: inline;
+        }
+</style>
+</head>
+<body>
+    <h1 >My dog ate my homework</h1>
+    <p id="textoAleatorio"></p>
+    <p id="textoAleatorio2"></p>
+    <p id="textoAleatorio3"></p>
+    <p id="textoAleatorio4"></p>
+    <script>
+        function texto_aleatorio() {
+          var textos = [];
+          textos[0] = "The dog"
+          textos[1] = "My grandma"
+          textos[2] = "The mailman"
+          textos[3] = "My bird"
+
+          aleat = Math.random() * (textos.length)
+          aleat = Math.floor(aleat)
+    
+          return textos[aleat];
+        }
+        document.getElementById('textoAleatorio').innerText = texto_aleatorio();
+      
+        function texto_aleatorio2() {
+          var textos = [];
+          textos[0] = "ate"
+          textos[1] = "peed"
+          textos[2] = "crushed"
+          textos[3] = "broke"
+          
+
+          aleat = Math.random() * (textos.length)
+          aleat = Math.floor(aleat)
+    
+          return textos[aleat];
+        }
+        document.getElementById('textoAleatorio2').innerText = texto_aleatorio2();
+
+      
+        function texto_aleatorio3() {
+          var textos = [];
+          textos[0] = "my homework"
+          textos[1] = "my phone"
+          textos[2] = "the car"
+
+          aleat = Math.random() * (textos.length)
+          aleat = Math.floor(aleat)
+    
+          return textos[aleat];
+        }
+        document.getElementById('textoAleatorio3').innerText = texto_aleatorio3();
+
+
+        function texto_aleatorio4() {
+          var textos = [];
+          textos[0] = "before the class"
+          textos[1] = "when I was sleepingwhen"
+          textos[2] = "while I was exercising"
+          textos[3] = "during my lunch"
+          textos[4] = "while I was praying"
+
+          aleat = Math.random() * (textos.length)
+          aleat = Math.floor(aleat)
+    
+          return textos[aleat];
+        }
+        document.getElementById('textoAleatorio4').innerText = texto_aleatorio4();
+
+    </script>  
+</body>
+</html>
